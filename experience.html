@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Allen: Experience</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:lightslategray;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color:powderblue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color:powderblue;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color:powderblue;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  border-style:solid;
+  border-color:lightslategray;
+  border-width:5px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+      .collapsible {
+        background-color: #9ed9e0;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 100%;
+        font-family: garamond;
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .collapsible:hover {
+        background-color: powderblue;
+      }
+
+      /* Style the collapsible content. Note: hidden by default */
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: powderblue;
+      } 
+
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: slategray;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color:lightslategray;
+        padding:16px;
+      }
+
+      .navbar a {
+        float: center;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+</style>
+
+  </head>
+  <body style="background-color:powderblue;font-family:garamond;">
+  <header>   
+    <h1 style="text-align:center;">Experience</h1>
+  </header>
+
+    <div class="navbar" style="text-align:center">
+      <a href="index.html">Home</a>
+      <a href="about.html">About & Contact</a>
+      <a href="education.html">Education</a>
+      <a href="recs.html">What's Up with Em?</a>
+      <a href="Em Allen Resume.pdf">Downloadable Resume</a>
+      </div>
+
+  <article>
+    <h2 style="font-size:150%"><strong>Lake Forest College - <em>Lake Forest, Illinois</em></strong></h2>
+
+    <button type="button" class="collapsible"><em>Student Gallery Worker</em>, Sonnenschein and Albright Galleries<br>September 2021 - present</button>
+    <div class="content">
+      <p>I greet gallery visitors and explain current exhibitions.<br>I support the gallery manager in curation and exhibition design, as well as installing and de-installing objects.<br>I have trained in PastPerfect to assist in collections management.</p>
+    </div>
+
+    <button type="button" class="collapsible"><em>Student Researcher</em>, under Professor Susy Bielak<br>July 2023 - present</button>
+    <div class="content">
+    <p>I synthesize course materials for studio art courses:Radical Latinx Women, Installation Art, and Painting. I investigate artists and art movements for reference, and compile materials. I also evaluate syllabi and course materials to assess content, relevance, and balance.<br>Additionally, I assist the professor in research for professional artistic endeavors.</p>
+    </div>
+    
+    <button type="button" class="collapsible"><em>Co-Curator</em>, Student-curated exhibition "FROM"<br>September - December 2022</button>
+    <div class="content">
+    <p>I collaborated with other students to curate an on-campus exhibition, which included developing a theme, investigating and inviting artists, designing exhibition materials and events, installing the exhibition, and acting as artists’ personal assistants<br>The exhibiting artists included Lydia Cheshewalla, Azadeh Gholizadeh, Chris Pappan, Diana Torres, and Derrick Woods-Morrow.</p>
+    </div>
+    
+    <button type="button" class="collapsible"><em>Co-Curator</em>, Student-curated exhibtion "Once Upon a Sonnenschein"<br>September - December 2023</button>
+    <div class="content">
+    <p>I collaborated with other students to curate an on-campus exhibition, which included developing a theme, mining from the campus collections for objects to display, designing exhibition materials and events, and installing the exhibition.</p>
+    </div>
+  </article>
+    
+  <article>
+    <h3 style="font-size:150%"><strong>Swedish American Museum - <em> Andersonville, Chicago, Illinois</em></strong></h3>
+    <button type="button" class="collapsible"><em>Collections Intern</em><br>January - May 2024</button>
+    <div class="content">
+    <p>I worked under the curator and collections manager on collections, archives, and exhibitions.<br>I learned and improved upon digitization skills, creating and updating catalogs, PastPerfect, object handling and photography, and installation</p>
+    </div>
+  </article>
+
+      <header>
+        <h1>Skills and Extracurricular Experience</h1>
+      </header>
+
+      <article style="background-color:powderblue">
+        <h2 style="font-size:150%;text-align:center"><strong>Skills</strong></h2>
+
+        <p style="padding:18px">Conversational German<br>Collections Database: Past Perfect<br>Basic coding: Python, HTML</p>
+      </article>
+
+      <article>
+        <h2 style="font-size:150%;text-align:center"><strong>Extracurricular and Leadership</strong></h2>
+
+         <button type="button" class="collapsible"><em>Member</em>, Aikido Club - Lake Forest College<br>August 2021 - present</button>
+        <div class="content">
+          <p>I work collaboratively with other students to learn new skills and assist in engagement with new student members</p>
+        </div>
+
+        <button type="button" class="collapsible"><em>Lead Editor</em>, Inter-Text Humanities Journal - Lake Forest College<br>August 2023-present</button>
+        <div class="content">
+          <p> I collaborate as part of a team of student editors on an under-graduate humanities journal. We develop and peer-review other editor's academic work for feature articles. We assess and select outstanding undergraduate papers for publication.</p>
+        </div>
+
+        <button type="button" class="collapsible"><em>Student Gallery Volunteer</em>, Art Institute of Chicago, Illinois<br>February 2024</button>
+        <div class="content">
+          <p>I acted as a student docent for the Art Institute of Chicago's University Fest day; informing visitors about the painting <em>The Song of the Lark</em> by Jules Breton.</p>
+        </div>
+      </article>
+
+      <article>
+        <h2 style="font-size:150%;text-align:center"><strong>Published Works</strong></h2>
+        <button type="button" class="collapsible">“Romanticization and Reaction: Jules Breton’s The Song of the Lark,” Inter-Text Humanities Journal Volume 4, p. 43-50, Spring 2023</button>
+      <div class="content">
+        <p><a href="Em Allen Inter-Text Volume 4.pdf">Download here!</a></p>
+      </div>
+        <button type="button" class="collapsible">“Judith Slaying Holofernes: Murderer, Woman, Icon,” Inter-Text Humanities Journal Volume 5, p. 103-107, Spring 2024</button>
+        <div class="content">
+          <p></p><a href="Em Allen Inter-Text Volume 5.pdf">Download here!</a></p>
+        </div>
+      </article>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+    
+  </body>
+</html>
